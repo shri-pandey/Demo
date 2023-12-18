@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="btn">Button </h1>
+    <h1 id="btn2">Reset Button</h1>
+    <p id="display">0</p>
+
+</body>
+<script>
+    var counter =0;
+ var butn = document.getElementById("btn");
+ var butn2 = document.getElementById("btn2")
+
+ var dis = document.getElementById("display");
+
+ butn.addEventListener("click", function(){
+    counter++;
+    dis.innerHTML = counter;
+ });
+
+
+  butn2.addEventListener("click", function(){
+    counter = 0;
+    dis.innerHTML = counter;
+ });
+</script>
+</html>
